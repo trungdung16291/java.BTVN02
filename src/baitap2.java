@@ -14,13 +14,9 @@ public class baitap2 {
         System.out.print("3. Đếm số ký tự trong chuỗi: "+name.length()+ "\n");
         System.out.print("4. In ra ký tự cuối cùng trong chuỗi: " +name.charAt(name.length()-1)+ "\n");
         System.out.print("5. In ra 5 ký tự đầu tiên của chuỗi: "+name.substring(0,5)+ "\n");
-
-        if (name.contains("hello")==true){
-            System.out.println("6.Kiểm tra chuỗi vừa nhập có chứa chuỗi “hello” hay không? in ra true nếu chứa, ngược lại thì in ra false nếu không chứa: true");
-
-        }else {
-            System.out.println("Kiểm tra chuỗi vừa nhập có chứa chuỗi “hello” hay không? in ra true nếu chứa, ngược lại thì in ra false nếu không chứa : false");
-        }
+        System.out.print("6. Kiểm tra chuỗi vừa nhập có chứa chuỗi “hello” hay không? in ra true nếu chứa, ngược lại thì in ra false nếu không chứa:");
+        boolean ketQua = (name.contains("hello"))?true:false;
+        System.out.println( ""+ ketQua);
 // bài dự đoán kết quả
         int a =10;
         int b=20;
@@ -41,10 +37,12 @@ public class baitap2 {
 
         int x=10;
         int y=20;
-        int z;
-        System.out.println(z=x);
-        System.out.println(x=y);
-        System.out.println(y=z);
+        int z=x;
+        x=y;
+        y=z;
+        System.out.println("x = "+ x);
+        System.out.println("y = " + y);
+
     }
 
 }
